@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <title>Inspect Content with the DOM</title>
+    <script type="text/javascript">
+        function displayBusinessCardData() {
+            var xmldata1 = document.getElementById("xmldata1");
+            var bizCard = xmldata1.getElementsByTagName("BusinessCard")[0];
+            var name = "Name: "+bizCard.getElementsByTagName("Name")[0].firstChild.data;
+            var email = "Email: "+bizCard.getElementsByTagName("email")[0].firstChild.data;;
+
+            alert("BusinessCard Data : \n\n" + name + "\n" + email)
+        }
+
+        window.addEventListener("load", function() {
+            document
+                .querySelector("#showBCardData")
+                .addEventListener("click", displayBusinessCardData)
+        })
+    </script>
+<body>
+    <xml id="xmldata1" style="display: none">
+        <BusinessCard>
+            <Name>Rajkumar Karnakar</Name>
+            <Phone type="mobile" primary="primary" >+91 9898989898</Phone>
+            <Phone type="work">+(100) 123456789</Phone>
+            <email>raj@work.com</email>
+        </BusinessCard>
+    </xml>
+    <button id="showBCardData">show business card data</button>
+</body>
+</html>
