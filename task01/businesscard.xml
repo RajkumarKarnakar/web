@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-    <BusinessCard>
-        <Name>Rajkumar Karnakar</Name>
-        <Phone type="mobile" primary="primary" >+91 9898989898</Phone>
-        <Phone type="work">+(100) 123456789</Phone>
-        <email>raj@work.com</email>
-    </BusinessCard>

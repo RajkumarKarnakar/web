@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="style/businesscard.css" type="text/css"?>
-<BusinessCard>
-    <Name>Rajkumar Karnakar</Name>
-    <Phone type="mobile" primary="primary" >+91 9898989898</Phone>
-    <Phone type="work">+(100) 123456789</Phone>
-    <email>raj@work.com</email>
-</BusinessCard>
