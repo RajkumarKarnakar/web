@@ -1,0 +1,14 @@
+export const LargePerson = ({person})=>{
+    const {name,age,DOB,hobbies} =person;
+    return(
+        <>
+        <h3>{name}</h3>
+        <p>Age: {age} years</p>
+        <p>Date of Birth: {DOB}</p>
+        <h3>Hobbies:</h3>
+        <ul>
+            {hobbies.map(hobby=> <li key = {hobby}>{hobby}</li>)}    
+        </ul>
+        </>
+    )
+}
